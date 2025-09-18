@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main_sort_css.css">
+    <title>Home</title>
+</head>
+<body>
+    <div id="link_thing">
+        <a href="sorting_algorithm_main.html" class="link">Home</a>
+        <a href="credits.html" class="link">Credits</a>
+        <a href="code_provider.html" class="link">Code</a>
+    </div>
+
+    <div id="fake_body">
+
+        <div id="title">
+                <label >Sorting Algorithms</label>    
+                <label id="title_animation">[]</label>
+            </div>
+            
+
+            <div id="all_txt">
+
+                <div class="txt_cluster" style="border-right:1px solid white ;">
+                    <b style="font-size: 50px;"> Introduction To Algorithms </b>
+                    <p>
+                        Algorithms are methods one can use to solve a problem by following
+                        a predetermined set of rules. <br>
+                        <label class="underlined" id="sorting_algo"> Sorting Algortihms</label> are Algorithms used to sort 
+                        an <label class="underlined" id="array"> Array</label> of numbers.
+                    </p>
+                    <br>
+                    <p>
+                        For example a list of numbers from 0-5 randomly shuffled, is called an <br>
+                        <label class="underlined" id="unsorted_array">Unsorted Array</label> <br> <br>
+                        <label class="example">[ 4,1,0,5,2,1 ]</label> <br><br><br>
+
+                        The same list of numbers that is ordered from the smallest element to the largest is called a 
+                        <label class="underlined" id="sorted_array">Sorted Array</label> <br> <br>
+                        <label class="example">[ 0,1,2,3,4,5 ]</label>
+
+                        <br> <br>
+                        <label class="glossary" id="glos1">[ Glossary???? ]</label>
+                    </p>
+                </div> 
+            
+
+                <div class="txt_cluster">
+                    <b style="font-size: 50px;"> Algorithm Effieciency </b>
+                    <p>
+                        The effieciency of an Algorithm is determined by its <br>
+                        <label class="underlined" id="time_complex">Time Complexity</label>
+                    </p>
+                    <br>
+                    <p>
+                        When encountering small problems Time Complexity rarely is 
+                        mentioned, since the computer can complete the task almost instanlty.
+                        But when we encouter <br>
+                        <label class="underlined" id="big_data">Big Data</label>
+                        we cannot depend on the computers efficiency and need 
+                        to adjust our Algorithm accordingly.
+
+                        
+                        
+                    </p>
+                    <p>
+                        Sorting an Array is a very common problem in Computer Science
+                        and thus mulitple Sorting Algorithms have been developed, every one with 
+                        different benefits and risks.
+                        <br> <br>
+                        <label class="glossary" id="glos2">[ Glossary???? ]</label>
+                    </p>
+                </div>     
+                
+                
+
+            </div>
+            
+
+
+            <div id="tab">
+                <div class="button_sel">
+                    <button class="algo_sel" id="btn_boggo">Boggo Sort</button> 
+                    <button class="algo_sel" id="btn_bubble">Bubble Sort</button>
+                    <button class="algo_sel" id="btn_selection">Selection Sort</button>
+                    <button class="algo_sel" id="btn_insertion">Insertion Sort</button>
+                    <button class="algo_sel" id="btn_merge">Merge Sort</button>
+                    <button class="algo_sel" id="btn_radix">Radix Sort</button>
+                    
+                    <div id="txt_sel">
+                        <p id="short_info">Select  a Sorting Algorithm to Inspect! <br>
+                        Remember every algorithms varies in efficiency, to compare them use their <br>
+                        Big O
+                        </p>
+
+                        <label id="ex_time" class="example">O(n^2) --> Bad</label>
+                        <br>
+                        <button id="visualise_link" class="link_btn" href=""> Visualise!</button>
+                        <button class="link_btn" id="info_link"> More Info...</button>
+                    </div>
+                
+                
+
+            </div>
+    </div>
+
+    <div class="txt_cluster">
+        <b style="font-size: 50px;"> Data Analysis </b>
+        <p>
+            Sorting Algorthims like the ones that were presented are commonly used in 
+            <label class="underlined" id="data_analysis">Data Analysis</label> <br>
+            When somone wants to organise a dataset, or identify patterns sorting <br>
+            the dataset is good practise. A lot of times sorting the dataset is part of <br>
+            a bigger Algorithm, taking advantage of the sorted arrays <label class="underlined" id="ordered_nature">Ordered Nature</label>. <br>
+            In general a sorted dataset is considered a more organised set, easier to control than an unsorted one.
+
+        </p>
+        <label class="glossary" id="glos3">[ Glossary???? ]</label>
+    </div>
+
+    <div id="footer">
+        <label>Sorting Algorithms 2022 - 2023</label> <br>
+        <label>School Project by: Βικτωρ Νορόκ, Δημήτρης Ορφανός, Δημήτρης Καβάλας, Αλεξ Βαρσιζινσκι</label>
+    </div>    
+
+    <script src="main_sorting.js"></script>
+
+</body>
+</html>

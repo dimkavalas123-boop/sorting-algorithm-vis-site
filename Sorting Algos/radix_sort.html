@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bubble_style.css">
+</head>
+<body>
+    <p id="title"><a href="../sorting_algorithm_main.html" class="path">Sorts</a>/ Radix Sort</p>
+    <!-- <a href="bubble_sort.html" class="link">Bubble Sort</a>
+    <a  class="link"href="insertion.html">Insertion Sort</a>
+    <a href="selection_sort.html" class="link">Selection Sort</a>  
+    <a href="quick_sort.html" class="link">Quick Sort</a>
+    <a  class="link"href="radix_sort.html">Radix Sort</a>  -->
+        
+    <div id="canvas_div">
+        <canvas id="c" ></canvas> 
+               
+        <input type="range" min="10" max="1500" id="lst_range"> <label id="lst_items">Items:100</label>
+        <label id="sorting_label">Sorting:False</label>
+    </div>
+
+    <button id="randomize_btn">Randomize/Reset</button>
+    <button id="sort_btn">Sort</button>
+
+    <select id="select_el">
+        <option value="bar">Bar</option>
+        <option value="line">Line</option>
+        <option value="connect_line">Connected Line</option>
+        <option value="radar">Radar</option> 
+        <option value="polarArea">Polar Area</option>
+    </select>
+
+    <script src="radix_sort.js"></script>
+</body>
+</html>

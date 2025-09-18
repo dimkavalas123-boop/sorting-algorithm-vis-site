@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radix Sort Info</title>
+    <link rel="stylesheet" href="algo_info_css.css">
+</head>
+<body>  
+    <p id="title">
+        <a href="../sorting_algorithm_main.html" class="path">Sorts</a> / Radix Sort Info
+    </p>
+
+    <div class="txt_cluster">
+        <b style="font-size: 50px;">1st Iteration</b>
+        <p> 
+            <em style="opacity: .7; font-size:40px;margin:10px;"></em>
+            Radix Sort is a Sorting Algorithm capable of sorting huge arrays whose elements 
+            Base is as big as 256. <br>
+            Let's say we have an array of 5 elements with the biggest being 999 
+            <br> <br> <label class="example">[ 80,456,751,999,2 ]</label> <br> <br>
+            First we need to make a Dictionary
+            that contains all the numbers from 0 - 9
+
+            <br> <br> <label class="example">
+                0 -> [],
+                1 -> [],
+                2 -> [],
+                3 -> [],
+                4 -> [],<br> <br>
+                5 -> [], 
+                6 -> []
+                7 -> []
+                8 -> []
+                9 - > []
+
+            </label> <br> <br>
+            Then we look at the last digit of every number and then assing the value we found accordingly
+            <br> <br> <label class="example">999 => Last digit 9 => 9->[999]</label> <br> <br>
+            <br> <br> <label class="example">
+                0 -> [80],
+                1 -> [751],
+                2 -> [2],
+                3 -> [],
+                4 -> [],<br> <br>
+                5 -> [], 
+                6 -> [456]
+                7 -> []
+                8 -> []
+                9 - > [999]
+
+            </label> <br> <br>
+            
+            And now we drop every element to a new array
+            <br> <br> <label class="example">[ 80,751,2,456,999 ]</label> <br> <br>
+        </p>
+    </div>
+
+    <div class="txt_cluster">
+        <b style="font-size: 50px;">2nd Iteration</b>
+        <p>
+            We know repeat the same proccess but now we are looking at the second from the end number
+            <br> <br> <label class="example">751 => Second from the end digit 5 => 5->[751]</label> <br> <br>
+            If the number does not have enough digits we set their found value to 0
+            <br> <br> <label class="example">2 => Second from the end digit 0 => 0->[2]</label> <br> <br>
+
+            <br> <br> <label class="example">
+                0 -> [2],
+                1 -> [],
+                2 -> [],
+                3 -> [],
+                4 -> [],<br> <br>
+                5 -> [751,456], 
+                6 -> []
+                7 -> []
+                8 -> [80]
+                9 - > [999]
+
+            </label> <br> <br>
+            And now we drop every element to a new array
+            <br> <br> <label class="example">[ 2,752,456,80,999]</label> <br> <br>            
+        </p>
+        
+    </div>
+
+    
+    <div class="txt_cluster">
+        <b style="font-size: 50px;">3rd Iteration</b>
+        <p>
+            And now we repeat the same proccess again for the last time.
+            <br> <br> <label class="example">
+                0 -> [2,80],
+                1 -> [],
+                2 -> [],
+                3 -> [],
+                4 -> [],<br> <br>
+                5 -> [456], 
+                6 -> []
+                7 -> [751]
+                8 -> []
+                9 - > [999]
+
+            </label> <br> <br>
+            And now we drop every element to a new array
+            <br> <br> <label class="example">[ 2,80,456,751,999]</label> <br> <br>
+
+            As one can see the list is sorted and we repeated the same action for the number of digits the greatest number is.
+            <br> <br> <label class="example">999 => Largest element => max_digit_length = 3</label> <br> <br>            
+        </p>
+        
+    </div>
+
+    <div id="tab_div">
+        <div id="tab">
+            <p id="title_array"> Iteration: 0</p>
+            <label id="txt_array">[ 80,456,751,999,2 ]</label>
+            <button id="stop_btn"> Start </button>
+        </div>        
+    </div>
+
+    <script src="radix_sort.js"></script>
+</body>
+</html>

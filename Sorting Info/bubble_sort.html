@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bubble Sort</title>
+        <link rel="stylesheet" href="algo_info_css.css">
+    </head>
+    <body>
+        <p id="title">
+            <a href="../sorting_algorithm_main.html" class="path">Sorts</a> / Bubble Sort Info
+        </p>
+
+        <div class = "txt_cluster">Bubble Sort is the simplest sorting algorithm that works by repeatedly 
+        <br>swapping the adjacent elements if they are in the wrong order.<br>
+        This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.<br>
+        Bubble sort starts with very first two elements, comparing them <br>
+        to check which one is greater.<br> <br>
+        <label class="example">Example:<BR><BR> [  <b>4,2</b>,7,5,1  ] </label><br><br>
+        </div>
+        <div class = "txt_cluster"> <label class="underlined">Phsase 1:</label> <label class="example"><br>Here, algorithm compares the first two elements, and swaps since 4>2<br><br>
+        [  <b>4,2</b>,7,5,1  ] -> [  <b>2,4</b>,7,5,1  ] <br><br>  
+        [  2,<b>4,7</b>,5,1  ], these elements are in order so it doesn't swap them.<br><br>
+        [  2,4,<b>7,5</b>,1  ], swaps since 7>5<br><br>
+        [  2,4,5,<b>7,1</b>  ], swaps since 7>1<br><br>[  2,4,5,1,7  ]</labe></div>
+        <BR><br>
+        <div class = "txt_cluster"> <label class="underlined">Phsase 2:</label><br><br>
+        <label class="example">It repeats the same process<br><br>
+        [  <b>2,4</b>,5,1,7  ], doesn't swap<br><BR>
+        [  2,<b>4,5</b>,1,7  ], doesn't swap<BR><BR>
+        [  2,4,<b>5,1</b>,7  ], swaps since 5>1<br<BR>
+        [  2,4,1,<b>5,7</b>  ], doesn't swap <br><br>
+        Our array so far: <BR><BR>
+        [  2,4,1,5,7  ]
+        
+        </label></div><BR><BR>
+        <div class = "txt_cluster"> <label class="underlined">Phsase 3:</label><br><br>
+        <label class="example">And again , it repeats the process<BR><BR>
+        [  <b>2,4</b>,1,5,7  ], doesn't swap <BR><BR>
+        [  2,<b>4,1</B>,5,7  ], swaps since 4>1<Br><Br>
+        [  2,1,<b>4,5,/b>,7  ], doesn't swap <BR><BR>
+        [  2,1,4,<b>5,7</b>  ], doesn't swap <BR><BR>
+        Our array <BR><BR>
+        [  2,1,4,5,7  ]
+        </label></div>
+
+        <div class = "txt_cluster"> <label class="underlined">Phsase 4 (Final):</label><br><br>
+        <label class="example">The Final Phase is the same , as you saw it's neither very effective nor fast,<BR><BR>
+        Bubble sort is just repeating the algorithm until it's finally sorted<BR><BR>
+        [  <b>2,1</b>,4,5,7  ], swaps since 2>1<BR><BR>
+        [  1,<B>2,4</b>,5,7  ], doesn't swap<BR><BR>
+        [  1,2,<b>4,5</b>,7  ], doesn't swap<BR><BR>
+        [  1,2,4,<B>5,7</b>  ], doesn't swap<br><BR>
+        Our sorted array is done:<br><BR>
+        [  1,2,4,5,7  ]
+        </label></div>
+
+        <div id="tab_div">
+            <div id="tab">
+                <p id="title_array"> Iteration: 0</p>
+                <label id="txt_array">[ 3,2,5,4,1,0 ]</label>
+                <button id="stop_btn"> Start </button>
+            </div>        
+        </div>
+    
+        <script src="bubble_sort.js"></script>
+    </body>
+</html>

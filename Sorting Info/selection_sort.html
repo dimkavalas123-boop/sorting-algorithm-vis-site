@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Sort</title>
+    <link rel="stylesheet" href="algo_info_css.css">
+</head>
+<body>
+    <p id="title">
+        <a href="../sorting_algorithm_main.html" class="path">Sorts</a> / Selection Sort Info
+    </p>
+    <div class = "txt_cluster">The selection sort algorithm sorts an array by repeatedly finding the minimum element <BR>
+    (considering ascending order) from the unsorted part and putting it at the beginning. 
+    <BR><BR>
+    The algorithm maintains two subarrays in a given array.
+    <BR><BR>
+    <label class="underlined">The subarray which already sorted.<BR> 
+    The remaining subarray was unsorted.</label><BR><BR>
+    In every iteration of the selection sort, the minimum element (considering ascending order) <BR>
+    from the unsorted subarray is picked and moved to the sorted subarray. 
+    </div>
+    <div class = "txt_cluster">
+    Let's consider the following array as an example:<BR><BR>
+    [  47,23,59,15,34  ]
+    </div>
+
+    <div class = "txt_cluster">
+    <label class="underlined">1st Iteration </label><br><br>
+    For the first position in the sorted array, the whole array is traversed from<BR>
+    index 0 to 4 sequentially. The first position where <b>47</b> is stored presently,<BR>
+    after traversing whole array it is clear that <b>15</b> is the lowest value.<BR><BR>
+    <label class="example">[  <b>47</b>,23,59,<B>15</b>,34  ]  -->  [  <b>15</b>,23,59,<b>47</b>,34  ]</label><BR><BR>
+    Thus, replace 47 with 15. After one iteration 15, which happens to be <BR>
+    the least value in the array, tends to appear in the first position of the sorted array.<BR><BR>
+    <label class="example">[  (15),23,59,47,34  ]</label><BR><BR>
+    Now the iterations will be without 15, because it is already in the sorted array (sorted),[main]
+    </div>
+
+    <div class = "txt_cluster">
+    <label class="underlined">2nd Iteration </label><br><br>
+    For the second position, where 23 is present,<BR>
+    again traverse the rest of the array in a sequential manner.<BR><BR>
+    <label class="example">[  (15),<b>23</B>,59,47,34  ]</label><BR><BR>
+    There isn't any smaller element than 23 so it's<BR>
+    the 2nd element in the sorted array.<BR><BR>
+    <label class="example">[  (15,23),59,47,34  ]</label><BR><BR>
+    </div>
+
+    <div class = "txt_cluster">
+    <label class="underlined">3rd Iteration </label><br><br>
+    For the third position, where 59 is present, again traverse the rest <BR>
+    of the array and find the third least value present in the unsorted array.<BR>
+    The third least value is 34 so replace it with 59.<BR><BR>
+    <label class="example">[  (15,23),<B>59</b>,47,34  ]  --> [  (15,23,34),47,59  ]</label>
+    </div>
+
+    <div class = "txt_cluster">
+    <label class="underlined">4th Iteration </label><br><br>
+    Now, for the last 2 position, similarly, 47 is present, <BR>
+    traverse the rest of the array and find the fourth least element in the array.<BR>
+    The 4th least value is 47 so it remains and so does 59.
+    Our sorted array is:<BR><BR> 
+    <label class="example">[  15,23,34,47,59  ]</label>
+    </div>
+
+    <div id="tab_div">
+        <div id="tab">
+            <p id="title_array"> Iteration: 0</p>
+            <label id="txt_array">[ 3,2,5,4,1,0,6,7,9,8 ]</label>
+            <button id="stop_btn"> Start </button>
+        </div>        
+    </div>
+
+    <script src="selection_sort.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+
+
+@font-face {
+    font-family: "light_df";
+    src: url("fonts/Oswald-Light.ttf")
+}
+
+@font-face {
+    font-family: "df";
+    src: url("fonts/Oswald-Medium.ttf")
+}
+
+@font-face {
+    font-family: "code";
+    src: url("fonts/SourceCodePro-Light.ttf")
+}
+
+
+body{
+    
+    overflow: scroll;
+    overflow-x:hidden;
+
+    border-top:  85px solid #0C0C0C;;
+    border-left: 25px solid #0C0C0C;
+    border-right:25px solid #0C0C0C;
+
+    padding:0px;
+    margin: 0px;
+    /* margin-bottom: 50px; */
+
+    font-family:"df" ;
+    letter-spacing: 1px; 
+    background-color: black;
+    color: white;
+}
+
+#footer{
+    background-color: #0C0C0C;
+    color: white;
+    opacity: .3;
+    font-size: 25px;
+    font-family: "light_df";
+    width: 100vw;
+    padding: 10px; 
+    text-align: center  ;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+.txt_cluster{
+    
+    font-family:"light_df" ;
+    font-size: 25px;
+    padding: 40px;
+    letter-spacing: 1px;
+    margin: 40px;
+    margin-bottom: 100px;
+    text-align: left;
+    width:80vw;
+    border: 5px outset white;  
+    /* border-right: 1px solid white;
+    border-right: 1px solid white; */
+}
+
+
+
+#link_thing{
+    padding: 30px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.link{
+    text-decoration: none;
+    color:white;
+    padding: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: .5s ;
+}
+
+.link:hover{
+    font-size: 30px;
+    background-color: white;
+    color: black;
+}
+
+.glossary{
+    font-family: "code";
+    font-size: 45px;
+}
+
+
+#title{
+    font-size: 50px;
+    padding: 30px;
+}
+
+.txt{
+    font-family: "light_df";
+    font-size: 35px;
+    padding: 10px;
+    margin: 30px;
+    margin-bottom: 150px;
+}
+
+#iteration_tab{
+    width: 80vw;
+    border: 1px solid white;
+    padding: 40px;
+    margin:50px;
+}
+#button_div{
+    width: fit-content;
+    
+}
+
+.btn{
+    font-family: "df";
+    background-color: black;
+    color:  white;
+    font-size: 40px;
+    border: 1px solid white;
+    padding: 30px;
+    margin: 20px;
+
+    transition: .3s;
+}
+
+.btn:hover{
+    scale: 1.1;
+}
+
+
+.example{
+    font-family:"code";
+    font-size: 25px;
+    background-color:rgb(5, 5, 5) ;
+    padding: 10px 30px;
+    margin: 35px;
+    color:  #e7e5f5;
+    width: 800px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+
+
+.link_btn{
+    border: 3px white double;
+    background-color: black;
+    color: white;
+    transition: .4s;
+    font-size: 35px;
+    margin: 30px;
+    align-items: center;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "df";
+}   
+
+.link_btn:hover{
+    scale: 1.25;
+    border: 5px solid;
+    color:royalblue;
+}
+
+.underlined{
+    font-family: "df";
+    text-decoration:underline;
+    letter-spacing: 2px;
+    font-size: 28px;
+    transition: .4s;
+}
+
+.path{
+    color: white;
+    font-size: 75px;
+    transition: .3s;
+}
+
+.path:hover{
+    font-size: 85px;
+}
+
+
+.underlined:hover{
+    color: green;
+}
+
+#txt_sel{
+    letter-spacing: 1px;
+    font-size: 27px;
+    padding: 50px;
+    background-color: black;
+    color: white;
+
+}
+
+#tab_div{
+    display: grid;
+    place-items: center;
+}
+
+#tab{
+    text-align: center;
+    font-size: 50px;
+    margin: 20px;
+    padding: 100px;
+    padding-left:150px ;
+    display: grid;
+    place-items: center;
+    width: fit-content;
+    background-color:black;
+    border: 2px solid white;
+}
+
+#stop_btn{
+    font-size: 35px;
+    color:  black;
+    background-color: white;
+    border: 3px solid black;
+    font-family: "df";
+    padding: 20px;
+    margin: 10px;
+
+    transition: .45s;
+}
+#title_array{
+    font-size: 75px;
+    text-transform: uppercase;
+}
+
+#stop_btn:hover{
+    scale: 1.1;
+    background-color: black;
+    color: white;
+    border: white 5px solid;
+
+}
+
+#txt_array{
+    font-size: 30px;
+    margin: 10px;
+
+}

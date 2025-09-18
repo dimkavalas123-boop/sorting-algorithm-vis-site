@@ -1,0 +1,112 @@
+
+@font-face {
+    font-family: "df";
+    src: url("Sorting Algos/fonts/Oswald-Medium.ttf")
+}
+
+@font-face {
+    font-family: "light_df";
+    src: url("Sorting Algos/fonts/Oswald-Light.ttf")
+}
+
+
+@font-face {
+    font-family: "code";
+    src: url("Sorting Algos/fonts/SourceCodePro-Light.ttf")
+}
+
+
+
+body{
+    font-size: 50px;
+
+    overflow: scroll;
+    overflow-x:hidden;
+
+    border-top:  85px solid #0C0C0C;;
+    border-left: 25px solid #0C0C0C;
+    border-right:25px solid #0C0C0C;
+
+    padding:0px;
+    margin: 0px;
+    /* margin-bottom: 50px; */
+
+    font-family:"df" ;
+    letter-spacing: 1px; 
+    background-color: black;
+    color: white;
+}
+
+#footer{
+    background-color: #0C0C0C;
+    color: white;
+    opacity: .3;
+    font-size: 25px;
+    font-family: "light_df";
+    width: 100vw;
+    padding: 10px; 
+    text-align: center  ;
+}
+
+#link_thing{
+    padding: 30px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.link{
+    text-decoration: none;
+    color:white;
+    padding: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: .5s ;
+}
+
+.link:hover{
+    font-size: 30px;
+    background-color: white;
+    color: black;
+}
+
+.txt_cluster{
+    
+    font-family:"light_df" ;
+    font-size: 25px;
+    padding: 40px;
+    letter-spacing: 1px;
+    text-align: left;
+    /* border-right: 1px solid white;
+    border-right: 1px solid white; */
+}
+
+.button_sel{
+    text-transform: uppercase;
+    border: white;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 25px;
+    font-family: "df";
+    transition: .35s ease-in-out;
+}
+
+.button_sel:hover{
+    scale: 1.05;
+}
+
+#buttons{
+    padding: 30px;
+}
+
+.example{
+    font-family:"code";
+    font-size: 25px;
+    background-color:rgb(5, 5, 5) ;
+    padding: 10px 30px;
+    margin: 35px;
+    color:  #e7e5f5;
+    width: 80vw;
+    text-align: left;
+    letter-spacing: 5px;
+}

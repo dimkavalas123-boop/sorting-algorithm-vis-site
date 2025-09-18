@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Sort Info</title>
+    <link rel="stylesheet" href="algo_info_css.css">
+</head>
+<body>
+    <p id="title">
+        <a href="../sorting_algorithm_main.html" class="path">Sorts</a> / Merge Sort Info
+    </p>
+    
+    <div class="txt_cluster">
+        Merge Sort uses the "Divide and conquer" strategy when it comes to sorting it's elements. <br>
+        The Algorithm breaks the array into individual smaller arrray 
+        <br> <br> <label class="example">[ 9,4,2,1,3,5 ] -> [ [9],[4],[2],[1],[3],[5] ] </label> <br> <br>
+        Then the Algorithm gradually merges the arrays every time doubling their size.
+        <br> <br> <label class="example"> [9],[4] -> [4,9] </label> <br> 
+        <br> <br> <label class="example"> [0,3],[9,4] ->[0,3,4,9] </label> <br> <br>
+    </div>
+
+    <div class="txt_cluster">
+        Here is an example of how merge sort works 
+        <p style="font-size: 35px;">Example 1</p> 
+        <label class="example"> [ 5,3,1,0,4,2,7,6 ] ---> Start Array</label> <br> <br>
+        <br> <label class="example"> [ [5],[3],[1],[0],[4],[2],[7],[6] ]</label> <br> 
+        <br> <br> <label class="example"> [ [3,5],[0,1],[2,4],[6,7] ]</label> <br> 
+        <br> <br> <label class="example"> [ [3,5],[0,1],[2,4],[6,7] ]</label> <br> 
+        <br> <br> <label class="example"> [ [0,1,3,5],[2,4,6,7] ]</label> <br> 
+        <br> <br> <label class="example"> [ 0,1,2,3,4,5,6,7 ] ---> End Array</label> <br> <br> <br> 
+       
+        <p style="font-size: 35px;">Example 2</p> 
+        <label class="example"> [ 5,3,1,0,4,2 ] ---> Start Array</label> <br> 
+        <br> <br> <label class="example"> [ [5],[3],[1],[0],[4],[2] ]</label> <br> 
+        <br> <br> <label class="example"> [ [3,5],[0,1],[2,4] ]</label> <br> 
+        <br> <br> <label class="example"> [ [0,1,3,5],[2,4] ]</label> <br> 
+        <br> <br> <label class="example"> [ 0,1,2,3,4,5 ] ---> End Array</label> <br> 
+    </div>
+
+    <div id="tab_div">
+        <div id="tab">
+            <p id="title_array"> Iteration: 0</p>
+            <label id="txt_array">[ 5,3,1,0,4,2,7,6 ]</label>
+            <button id="stop_btn"> Start </button>
+        </div>        
+    </div>
+
+
+    <script src="merge_sort.js"></script>
+</body>
+</html>
