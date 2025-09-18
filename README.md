@@ -1,4 +1,4 @@
-#Sorting Algorithm Visualization
+# Sorting Algorithm Visualization
 
 This a full on site explaining some famous sorting algos like
 - Boggo Sort
